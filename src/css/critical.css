@@ -1,0 +1,11 @@
+h1{ display: inline; }
+html, body, div, h1, p{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-size: 100%; font: inherit; vertical-align: baseline; }
+body{ line-height: 1; }
+.grid-container{ width: 100%; max-width: 1200px; }
+.row::before, .row::after{ content: ''; display: table; clear: both; }
+[class*="col-"]{ float: left; min-height: 1px; width: 16.66%; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; background-color: rgb(255, 220, 220); }
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%; }
+.outline, .outline *{ outline-width: 1px; outline-style: solid; outline-color: rgb(246, 161, 161); }
+[class*="col-"] > p{ background-color: rgb(255, 194, 194); padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-align: center; color: white; }

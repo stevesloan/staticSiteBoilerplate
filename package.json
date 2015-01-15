@@ -1,0 +1,37 @@
+{
+  "name": "iporta",
+  "version": "3.0.0",
+  "description": "iPorta Website v3",
+  "scripts": {
+    "start": "grunt server",
+    "ghpages": "grunt ghpages"
+  },
+  "homepage": "http://github.com/stevesloan/iporta",
+  "bugs": "http://github.com/stevesloan/iporta/issues",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/stevesloan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevesloan/iporta.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-bower-install": "^1.6.0",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-criticalcss": "^0.4.6",
+    "grunt-dev-prod-switch": "^0.1.7",
+    "grunt-inline": "^0.3.4",
+    "grunt-inline-css": "^0.1.4",
+    "grunt-serve": "^0.1.6",
+    "grunt-svgmin": "^2.0.0",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}
