@@ -98,7 +98,18 @@ module.exports = function(grunt) {
 				files: 'src/js/*.js',
 				tasks: ['uglify']
 			}
-		}
+		},
+		connect: {
+	      all: {
+	        options:{
+	          port: 9000,
+	          hostname: "0.0.0.0",
+	          // Prevents Grunt to close just after the task (starting the server) completes
+	          // This will be removed later as `watch` will take care of that
+	          keepalive: true
+	        }
+	      }
+	    }
 		
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -109,8 +120,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-inline');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-dev-prod-switch');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	
 	grunt.registerTask('default',['sass','criticalcss','cssmin','inline','uglify',]);
 	grunt.registerTask('images',['svgmin','cssmin']);
+	grunt.registerTask('server',['connect']);
 	
 }
