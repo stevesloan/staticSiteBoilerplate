@@ -3,3 +3,5 @@ dist/*
 .sass-cache
 *.css.map
 bower_components
+._*
+.DS_Store

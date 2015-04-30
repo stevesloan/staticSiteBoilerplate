@@ -1,0 +1,40 @@
+$viewport-m: 32rem !default;
+$viewport-l: 48rem !default;
+
+$font-size: 20px !default;
+$font-size-m: 20px !default;
+$font-size-l: 20px !default;
+$font-weight: 400 !default;
+$font-color: #333 !default;
+
+$font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$monospace-font-family: "Monaco", "Lucida Console", Courier, monospace !default;
+
+// Sass will automatically convert the rgba values to hex
+// if they alpha value is 1. So, it will default to .99 to
+// avoid this.
+$alpha-value: .99;
+
+$gray-light-5: rgba(#E5E7E8, $alpha-value);
+$gray-light-8: rgba(#fafafa, $alpha-value);
+$gray-mid-6: rgba(#909090, $alpha-value);
+$gray-dark-9: rgba(#484848, $alpha-value);
+
+$red: #e74c3c !default;
+$orange: #FD802A !default;
+$blue: #0093CC !default;
+$green: #57BD46 !default;
+$purple: #8957CF !default;
+
+
+$off-white: $gray-light-8 !default;
+$light-gray: $gray-light-5 !default;
+$mid-gray: $gray-mid-6 !default;
+$dark-gray: $gray-dark-9 !default;
+$white: #fff !default;
+
+$link-color: $blue !default;
+
+$border-radius: 3px !default;
+
+$measure-width: 59rem !default;

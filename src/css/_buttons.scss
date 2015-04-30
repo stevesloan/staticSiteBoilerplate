@@ -1,0 +1,125 @@
+%btn--base {
+  @extend .brdr--rounded;
+  padding: $padding/2 $padding;
+  border-bottom: 5px solid #ccc;
+  color: $font-color;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn {
+  @extend %btn--base;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: rgba(0,0,0,0.05);
+    color: darken($font-color, 20%);
+  }
+}
+
+.btn--link {
+  @extend %btn--base;
+
+  border-color: transparent;
+  color: $link-color;
+
+  &:hover {
+    background-color: transparent;
+    color: darken($link-color, 15%);
+  }
+}
+
+.btn--blue {
+  @extend %btn--base;
+
+  border-color: darken($blue, 3%);
+  background-color: $blue;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($blue, 10%);
+  }
+}
+
+.btn--purple {
+  @extend %btn--base;
+
+  border-color: darken($purple, 3%);
+  background-color: $purple;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($purple, 10%);
+  }
+}
+
+
+
+.btn--orange {
+  @extend %btn--base;
+
+  border-color: darken($orange, 10%);
+  background-color: $orange;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($orange, 10%);
+  }
+}
+
+.btn--green {
+  @extend %btn--base;
+
+  border-color: darken($green, 4%);
+  background-color: $green;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($green, 10%);
+  }
+}
+
+.btn--gray {
+  @extend %btn--base;
+
+  border-color: darken($light-gray, 10%);
+  background-color: $light-gray;
+  color: $dark-gray;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $dark-gray;
+    background-color: darken($light-gray, 15%);
+  }
+}
+
+.btn--dark-gray {
+  @extend .btn--gray;
+  color: $white;
+  background-color: $dark-gray;
+}
+
+.btn--s {
+  @extend .small;
+  padding: $padding/2;
+}
+
+.btn--i {
+  display:inline-block;
+}
+
+

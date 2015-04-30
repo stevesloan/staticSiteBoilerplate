@@ -1,13 +1,13 @@
 {
-  "name": "iporta",
-  "version": "3.0.0",
-  "description": "iPorta Website v3",
+  "name": "staticSiteBoilerplate",
+  "version": "1.0.0",
+  "description": "A good starting point for static sites",
   "scripts": {
     "start": "grunt server",
     "ghpages": "grunt ghpages"
   },
-  "homepage": "http://github.com/stevesloan/iporta",
-  "bugs": "http://github.com/stevesloan/iporta/issues",
+  "homepage": "https://github.com/stevesloan/staticSiteBoilerplate",
+  "bugs": "https://github.com/stevesloan/staticSiteBoilerplate/issues",
   "author": {
     "name": "",
     "email": "",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/stevesloan/iporta.git"
+    "url": "git://github.com/stevesloan/staticSiteBoilerplate.git"
   },
   "dependencies": {
     "grunt-contrib-connect": "^0.10.1",
@@ -35,7 +35,9 @@
     "grunt-inline": "*",
     "grunt-inline-css": "*",
     "grunt-serve": "*",
+    "grunt-svg2png": "^0.2.7",
     "grunt-svgmin": "*",
+    "grunt-svgstore": "^0.5.0",
     "load-grunt-tasks": "*"
   }
 }

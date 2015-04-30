@@ -1,0 +1,149 @@
+html, body { /* ensure the available document space is the full height of the viewport */
+    height:100%;
+}
+
+.sidebar {
+	width:17%;
+	float: right;
+    height: 100%;
+    -webkit-transition: width 1s ease-out;
+}
+.lock .sidebar {
+	width:0%;
+}
+.content {
+	float:left;
+	width:83%;
+	-webkit-transition: width 1s ease-out;
+
+}
+.lock .content {
+	width:100%;
+}
+
+.container {
+	overflow: hidden;
+    position: relative;
+    height:100%;
+
+}
+
+header {
+	display:inline-block;
+	width:100%;
+	height:10em;
+	overflow: hidden;
+	-webkit-transition: height 1s ease-out;
+	background: $green url('../img/locked_screen.jpg');
+	
+}
+
+header.header-small {
+	height:4em;
+
+}
+.lock header {
+	
+	height:35em;
+}
+
+.sidebar .btn {
+	width:100%;
+	height:5em;
+	display: inline-block;
+	vertical-align: middle;
+	img {
+
+		vertical-align: middle;
+	}
+}
+
+.btn-back {
+	position: absolute;
+	left:0;
+	top:1em;
+	margin-left:-5em;
+	-webkit-transition: margin-left 1s ease-out;
+}
+.btn-back.active {
+	margin-left:0em;
+}
+
+.btn-lock {
+	position: absolute;
+	display:inline;
+	margin:-3em;
+	left:80%;
+	-webkit-transition: left 1s ease-out;
+	background-image: url('../img/png/lock.jpg');
+
+}
+
+.lock .btn-lock {
+	left:95%;
+}
+
+.lock .hideOnLock {
+	display:none;
+}
+
+
+.img-fill-cont {
+	height:9em;
+	overflow: hidden;
+
+	img {
+
+		width:100%;
+		height:auto;
+	}
+
+}
+
+
+.img-center-cont:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.img-center-cont img {
+    vertical-align: middle;
+    max-height: 80%;
+}
+.img-center-cont.img_center-cont--one-row {
+	height:18em;
+}
+.img-center-cont.img_center-cont--two-row {
+	height:9em;
+}
+
+.fullScreen {
+	width:100%;
+	height:auto;
+	margin-top:-11px;
+}
+
+.floating-nav {
+	float:left;
+	position: absolute;
+	margin-top:-1em;
+	margin-left:2em
+}
+
+ul.ticker, ul.ticker2 {
+	height:40px;
+
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	
+	li { 
+		list-style: none;
+		list-style-position: inside;
+		
+		height:38px;
+	}
+}
+

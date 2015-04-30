@@ -1,0 +1,80 @@
+.modal{
+   display:none;
+  // This is modal bg
+  &:before{
+    content: ""; 
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: 10;
+  }
+  
+  &:target{
+     
+    // Active animate in modal
+    &:before{
+      display: block;
+    }  
+    .modal-dialog{
+      
+      top: 20%;  
+    }
+     
+  }
+ 
+  &.active {
+    display:block;
+  } 
+}
+
+// Modal Dialog
+// ----------------------
+
+.modal-dialog{
+  background: #fefefe;
+  border-radius: 5px;
+  margin-left: -300px;
+  position: fixed; 
+  left: 50%; 
+  top: 40%;  
+  z-index: 11; 
+  width: 600px;
+  //.translate(0, -500%);
+  //.transition-transform(~"0.3s ease-out");
+
+  .btn-close{
+    color: $light-gray;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute; right: 5px; top: 0;
+    
+    &:hover{
+       color: darken($light-gray, 10%);
+    }
+    
+  }
+}
+
+.modal-body{
+  //padding: @space/2;
+}
+
+.modal-header,
+.modal-footer{
+  //padding: @space/4 @space/2;
+}
+
+.modal-header{
+  border-bottom: $light-gray solid 1px;
+  
+  h2{
+    font-size: 20px;
+  }
+  
+}
+
+.modal-footer{
+  border-top: $light-gray solid 1px;
+  text-align: right;
+}
