@@ -87,22 +87,33 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: 'src/css/*.scss',
-        tasks: ['sass',  'cssmin']
+        tasks: ['sass'],
         //tasks: ['sass', 'criticalcss', 'cssmin', 'inline']
+        options: { livereload: true }
       },
       html: {
         files: 'src/*.html',
-        tasks: ['inline']
+        tasks: [],
+        options: { livereload: true }
       },
       js : {
         files: 'src/js/*.js',
-        tasks: ['uglify']
+        tasks: [],
+        options: { livereload: true }
       },
       svg : {
         files: 'src/img/*.svg',
-        tasks: ['svg2png']
+        tasks: ['svg2png'],
+        options: { livereload: true }
+      },
+      livereload: {
+        // Here we watch the files the sass task will compile to
+        // These files are sent to the live reload server after sass compiles to them
+        options: { livereload: true },
+        files: ['dist/**/*'],
       }
     },
+    
     connect: {
       all: {
         options:{
