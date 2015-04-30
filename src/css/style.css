@@ -771,6 +771,7 @@ table td {
   margin: 0;
   padding: 1em;
   display: block;
-  background: #c0c0c0 !important; }
+  background: #c0c0c0 !important;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
