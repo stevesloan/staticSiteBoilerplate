@@ -18,11 +18,11 @@ module.exports = function(grunt) {
           ext: '.css'
         },
       {
-  expand: true,
-  cwd: 'css',
-  src: ['critical.css', '!*.min.css'],
-  dest: 'css',
-  ext: '.min.css'
+        expand: true,
+        cwd: 'css',
+        src: ['critical.css', '!*.min.css'],
+        dest: 'css',
+        ext: '.min.css'
       }]
       },
     },
@@ -137,7 +137,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-dev-prod-switch');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.registerTask('default', ['sass', 'criticalcss', 'cssmin', 'inline', 'uglify']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'inline', 'uglify']);
   grunt.registerTask('images', ['svgmin', 'cssmin']);
   grunt.registerTask('server', ['connect']);
 }
