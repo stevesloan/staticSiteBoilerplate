@@ -39,11 +39,11 @@ module.exports = function(grunt) {
     criticalcss: {
       custom: {
         options: {
-          url: 'https://dev.stevesloan.ca/bsaDevice',
+          url: '127.0.0.1:9000/src/',
           width: 1200,
           height: 900,
-          outputfile: 'css/critical.css',
-          filename: 'css/style.css', // Using path.resolve( path.join( ... ) ) is a good idea here
+          outputfile: 'dist/css/critical.css',
+          filename: 'src/css/style.css', // Using path.resolve( path.join( ... ) ) is a good idea here
           buffer: 800 * 1024
         }
       }
@@ -52,22 +52,6 @@ module.exports = function(grunt) {
       dist: {
         src: 'src/index.html',
         dest: 'dist/index.html'
-      }
-    },
-    svgmin: {
-      options: {
-        plugins: [
-          {
-  removeViewBox: false
-          }, {
-  removeUselessStrokeAndFill: false
-          }
-        ]
-      },
-      dist: {
-        files: {
-          'src/img/unicorn.svg': 'dist/img/unicorn.svg'
-        }
       }
     },
     dev_prod_switch: {
@@ -103,7 +87,7 @@ module.exports = function(grunt) {
       },
       svg : {
         files: 'src/img/*.svg',
-        tasks: ['svg2png'],
+        tasks: ['svgmin'],
         options: { livereload: true }
       },
       livereload: {
@@ -125,21 +109,12 @@ module.exports = function(grunt) {
         }
 
       }
-    },
-    svg2png: {
-      all: {
-        // specify files in array format with multiple src-dest mapping
-        files: [
-          // rasterize all SVG files in "img" and its subdirectories to "dist/img/png"
-          {cwd: 'src/img/', src: ['**/*.svg'], dest:'dist/img/png/'}
-        ]
-      }
     }
+   
 
   });
 
-  grunt.loadNpmTasks('grunt-svg2png');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-svgmin');

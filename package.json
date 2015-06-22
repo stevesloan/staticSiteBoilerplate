@@ -17,27 +17,17 @@
     "type": "git",
     "url": "git://github.com/stevesloan/staticSiteBoilerplate.git"
   },
-  "dependencies": {
-    "grunt-contrib-connect": "^0.10.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-regarde": "^0.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "*",
-    "grunt-bower-install": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-htmlmin": "*",
-    "grunt-contrib-sass": "~*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-criticalcss": "*",
-    "grunt-dev-prod-switch": "*",
-    "grunt-inline": "*",
-    "grunt-inline-css": "*",
-    "grunt-serve": "*",
-    "grunt-svg2png": "^0.2.7",
-    "grunt-svgmin": "*",
-    "grunt-svgstore": "^0.5.0",
-    "load-grunt-tasks": "*"
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-criticalcss": "^0.5.0",
+    "grunt-dev-prod-switch": "^0.1.7",
+    "grunt-inline": "^0.3.4",
+    "grunt-inline-css": "^0.1.5",
+    "grunt-sass": "^1.0.0",
+    "grunt-svgmin": "^2.0.1"
   }
 }

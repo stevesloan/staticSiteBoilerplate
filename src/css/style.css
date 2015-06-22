@@ -171,8 +171,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -330,7 +329,9 @@ th {
 
 a {
   color: #0093CC; }
-  a:hover, a:focus, a:active {
+  a:hover,
+  a:focus,
+  a:active {
     color: #006e99; }
 
 .bg--red {
@@ -519,9 +520,11 @@ html {
 @media screen and (min-width: 32rem) and (max-width: 48rem) {
   html {
     font-size: 20px; } }
+
 @media screen and (min-width: 48rem) {
   html {
     font-size: 20px; } }
+
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -563,8 +566,7 @@ h4,
   font-size: 1.414rem; }
 
 h5,
-.h5,
-table th {
+.h5, table th {
   font-size: 1.121rem; }
 
 h6,
@@ -572,8 +574,7 @@ h6,
   font-size: .88rem; }
 
 small,
-.small,
-.btn--s {
+.small, .btn--s {
   font-size: 0.707em; }
 
 pre,
@@ -641,6 +642,7 @@ code {
   .w100--s {
     width: auto;
     display: inline-block; } }
+
 img,
 canvas,
 iframe,
@@ -672,7 +674,9 @@ textarea {
   text-decoration: none;
   text-align: center; }
 
-.btn:hover, .btn:focus, .btn:active {
+.btn:hover,
+.btn:focus,
+.btn:active {
   background-color: rgba(0, 0, 0, 0.05);
   color: black; }
 
@@ -687,7 +691,9 @@ textarea {
   border-color: #0088bd;
   background-color: #0093CC;
   color: #fff; }
-  .btn--blue:hover, .btn--blue:focus, .btn--blue:active {
+  .btn--blue:hover,
+  .btn--blue:focus,
+  .btn--blue:active {
     color: #fff;
     background-color: #006e99; }
 
@@ -695,7 +701,9 @@ textarea {
   border-color: #814bcc;
   background-color: #8957CF;
   color: #fff; }
-  .btn--purple:hover, .btn--purple:focus, .btn--purple:active {
+  .btn--purple:hover,
+  .btn--purple:focus,
+  .btn--purple:active {
     color: #fff;
     background-color: #6e36bd; }
 
@@ -703,7 +711,9 @@ textarea {
   border-color: #f26402;
   background-color: #FD802A;
   color: #fff; }
-  .btn--orange:hover, .btn--orange:focus, .btn--orange:active {
+  .btn--orange:hover,
+  .btn--orange:focus,
+  .btn--orange:active {
     color: #fff;
     background-color: #f26402; }
 
@@ -711,7 +721,9 @@ textarea {
   border-color: #4fb03f;
   background-color: #57BD46;
   color: #fff; }
-  .btn--green:hover, .btn--green:focus, .btn--green:active {
+  .btn--green:hover,
+  .btn--green:focus,
+  .btn--green:active {
     color: #fff;
     background-color: #459937; }
 
@@ -719,7 +731,11 @@ textarea {
   border-color: rgba(202, 206, 208, 0.99);
   background-color: rgba(229, 231, 232, 0.99);
   color: rgba(72, 72, 72, 0.99); }
-  .btn--gray:hover, .btn--dark-gray:hover, .btn--gray:focus, .btn--dark-gray:focus, .btn--gray:active, .btn--dark-gray:active {
+  .btn--gray:hover,
+  .btn--dark-gray:hover,
+  .btn--gray:focus,
+  .btn--dark-gray:focus,
+  .btn--gray:active, .btn--dark-gray:active {
     color: rgba(72, 72, 72, 0.99);
     background-color: rgba(188, 194, 196, 0.99); }
 
@@ -773,5 +789,3 @@ table td {
   display: block;
   background: #c0c0c0 !important;
   text-align: center; }
-
-/*# sourceMappingURL=style.css.map */
