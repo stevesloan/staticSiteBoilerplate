@@ -71,18 +71,18 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: 'src/css/*.scss',
-        tasks: ['sass'],
+        tasks: ['sass','cssmin'],
         //tasks: ['sass', 'criticalcss', 'cssmin', 'inline']
         options: { livereload: true }
       },
       html: {
         files: 'src/*.html',
-        tasks: [],
+        tasks: ['inline'],
         options: { livereload: true }
       },
       js : {
         files: 'src/js/*.js',
-        tasks: [],
+        tasks: ['uglify'],
         options: { livereload: true }
       },
       svg : {
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
         files: ['dist/**/*'],
       }
     },
-    
+
     connect: {
       all: {
         options:{
@@ -110,7 +110,7 @@ module.exports = function(grunt) {
 
       }
     }
-   
+
 
   });
 
